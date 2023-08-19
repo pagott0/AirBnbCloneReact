@@ -43,6 +43,10 @@ section {
 .card {
   width: 175px;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  position: relative;
 }
 
 .starImg {
@@ -57,4 +61,27 @@ section {
 .cardStats {
   display: flex;
   align-items: center;
+}
+
+.cardsContent {
+  padding: 20px;
+  display: flex;
+  flex-wrap: nowrap;  /* remember */
+  gap: 20px;
+  overflow-x: auto; /* remember */
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--badge {
+  background-color: white;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
